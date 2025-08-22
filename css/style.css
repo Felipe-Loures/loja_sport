@@ -7,9 +7,9 @@
 body {
 
   background-image: url(../img/fundos.png);
+  transition: 1s;
 
 }
-
 header {
   width: 100%;
   display: flex;
@@ -195,4 +195,20 @@ footer {
   background-color: #101d49;
   color: #ffffff;
   padding: 10px;
+}
+
+body{
+  animation: full 15s alternate-reverse;
+  animation-iteration-count: infinite;
+
+}
+
+
+@keyframes full {
+  0%{
+    background-position: 0 0;
+  }
+  100%{
+    background-position: 0 100%;
+  }
 }
