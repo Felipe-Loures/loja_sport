@@ -5,17 +5,41 @@
   font-family: "Arial", Helvetica, sans-serif;
 }
 body {
-  background-image:url(../img/imagem\ \(4\).png) ;
-}
 
+  background-image: url(../img/fundos.png);
+  transition: 1s;
+
+}
 header {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 40px;
+  height: 45px;
   background-color: #101d49;
   color: #ffffff;
-  padding: 10px;
+   padding: 30px;
+  position: fixed;
+}
+.descontos ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.descontos 
+li,
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-shadow: 0px 2px 2px rgb(116, 48, 48);
+}
+.descontos 
+li,
+a:hover{
+  color:aliceblue;
+  text-shadow: 0px 2px 5px rgb(7, 7, 7);
 }
 
 .logo {
@@ -33,21 +57,21 @@ header {
 .botao {
   display: flex;
   justify-content: center;
-    align-items: center;
+  align-items: center;
 }
 button {
   margin-top: 30px;
- padding-bottom: 5px;
- padding-top: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
   border-radius: 10px;
- 
+
   padding-left: 6px;
-   padding-right: 6px;
+  padding-right: 6px;
   background-color: #101d49;
   color: #ffffff;
   display: flex;
   font-size: larger;
-  box-shadow:0px 1px 6px  rgb(10, 10, 10) ;
+  box-shadow: 0px 1px 6px rgb(10, 10, 10);
   font-weight: bolder;
 }
 
@@ -60,61 +84,56 @@ button:hover {
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin-top: 30px;
-  
+
   align-content: center;
 }
 .img {
   width: 200px;
 }
-h3{
+h3 {
   text-align: center;
   background-color: #101d49;
-  color:white;
-  
+  color: white;
 }
 
-
-h2{
-  letter-spacing: 0,5px;
+h2 {
+  letter-spacing: 0, 5px;
   color: #101d49;
   margin-top: 40px;
-  
 }
 
-.beneficios h2{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
+.beneficios h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.beneficios{
+.beneficios {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.beneficios p{
+.beneficios p {
   margin-top: 5px;
   width: 382px;
   line-height: 1.8;
- 
 }
 
-.depoimentos-h2{ 
+.depoimentos-h2 {
   text-align: center;
 }
 
-.depoimentos{
+.depoimentos {
   padding: 30px;
   display: flex;
   justify-content: center;
   text-align: center;
-  gap:30px; 
+  gap: 30px;
 }
 
-
-.box-depoimento{
+.box-depoimento {
   background-color: #101d49;
   color: white;
   padding: 40px;
@@ -125,25 +144,25 @@ h2{
   box-sizing: border-box;
 }
 
-.box-depoimento:hover{
+.box-depoimento:hover {
   background-color: #01081f;
 }
-.box-depoimento > h4{
+.box-depoimento > h4 {
   margin-bottom: 10px;
 }
 
-.formulario{
+.formulario {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 30px;
 }
 
-.formulario > h2{
+.formulario > h2 {
   margin-bottom: 20px;
 }
 
-.formulario > form{
+.formulario > form {
   max-width: 400px;
   margin: auto;
   text-align: left;
@@ -153,28 +172,27 @@ h2{
 .formulario input[type="email"] {
   width: 100%;
   margin: 10px 0px;
-  padding:10px;
+  padding: 10px;
   border-radius: 7px;
   border: 1px solid black;
 }
 
-.formulario input[type="submit"]{
- margin: 20px auto;
- padding-bottom: 5px;
- padding-top: 5px;
+.formulario input[type="submit"] {
+  margin: 20px auto;
+  padding-bottom: 5px;
+  padding-top: 5px;
   border-radius: 10px;
- 
   padding-left: 6px;
-   padding-right: 6px;
+  padding-right: 6px;
   background-color: #101d49;
   color: #ffffff;
   display: flex;
   font-size: larger;
-  box-shadow:0px 1px 6px  rgb(10, 10, 10) ;
-  font-weight: bolder; 
+  box-shadow: 0px 1px 6px rgb(10, 10, 10);
+  font-weight: bolder;
 }
 
-footer{
+footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -185,3 +203,18 @@ footer{
   padding: 10px;
 }
 
+body{
+  animation: full 50s linear;
+  animation-iteration-count: infinite;
+
+}
+
+
+@keyframes full {
+  0%{
+    background-position: 0 0;
+  }
+  100%{
+    background-position: 0 100%;
+  }
+}
