@@ -27,13 +27,19 @@ header {
   align-items: center;
   gap: 40px;
 }
-.descontos ul,
+.descontos 
 li,
 a {
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
   text-shadow: 0px 2px 2px rgb(116, 48, 48);
+}
+.descontos 
+li,
+a:hover{
+  color:aliceblue;
+  text-shadow: 0px 2px 5px rgb(7, 7, 7);
 }
 
 .logo {
@@ -198,7 +204,7 @@ footer {
 }
 
 body{
-  animation: full 15s alternate-reverse;
+  animation: full 50s linear;
   animation-iteration-count: infinite;
 
 }
