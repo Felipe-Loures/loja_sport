@@ -16,10 +16,10 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 45px;
-  background-color: #101d49;
+  background: #101d49;
   color: #ffffff;
    padding: 30px;
-  position: fixed;
+   position: fixed; 
 }
 .descontos ul {
   list-style-type: none;
@@ -44,11 +44,15 @@ a:hover{
 
 .logo {
   background-color: #162339;
-}
-.banner img {
-  width: 100%;
-}
 
+}
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/banner-novo.jpeg);
+  background-position: right center;
+ 
+}
 .logo h1 {
   font-size: 18px;
   color: white;
